@@ -9,9 +9,9 @@ function HomePage() {
     <div className="homePage">
       <div className="textContainer">
         <div className="wrapper">
-          <h1 className="title">Time to unlock Your Dream Home!</h1>
+          <h1 className="title">Time to explore and unlock Your <span>Dream Home</span>!</h1>
           <p>
-          Whether you're on the hunt for your ideal space or eager to sell your property at its best value, we've got you covered at every step of the way. With our extensive listings and cutting-edge technology, we're ready to help you unlock the door to your next chapter. Begin your exploration with us today and let's turn your real estate dreams into reality.
+          Whether you're on the hunt for your ideal space or eager to sell your property at its best value, we've got you covered at every step of the way. Begin your exploration with us today and let's turn your real estate dreams into reality.
           </p>
           <SearchBar />
           <div className="boxes">
@@ -25,7 +25,7 @@ function HomePage() {
             </div>
             <div className="box">
               <h1>2000+</h1>
-              <h2>Property Ready</h2>
+              <h2>Properties Ready</h2>
             </div>
           </div>
         </div>

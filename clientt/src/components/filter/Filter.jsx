@@ -51,9 +51,10 @@ function Filter() {
             onChange={handleChange}
             defaultValue={query.type}
           >
-            <option value="">any</option>
+            <option value="">Any</option>
             <option value="buy">Buy</option>
             <option value="rent">Rent</option>
+            <option value="rent">Sell</option>
           </select>
         </div>
         <div className="item">
@@ -64,7 +65,7 @@ function Filter() {
             onChange={handleChange}
             defaultValue={query.property}
           >
-            <option value="">any</option>
+            <option value="">Any</option>
             <option value="apartment">Apartment</option>
             <option value="house">House</option>
             <option value="condo">Condo</option>
@@ -88,7 +89,7 @@ function Filter() {
             type="text"
             id="maxPrice"
             name="maxPrice"
-            placeholder="any"
+            placeholder="Any"
             onChange={handleChange}
             defaultValue={query.maxPrice}
           />
@@ -99,7 +100,7 @@ function Filter() {
             type="text"
             id="bedroom"
             name="bedroom"
-            placeholder="any"
+            placeholder="Any"
             onChange={handleChange}
             defaultValue={query.bedroom}
           />

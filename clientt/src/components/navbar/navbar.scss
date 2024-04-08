@@ -5,16 +5,28 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color:white;
+  font-weight:600;
+  text-transform:uppercase;
+  cursor:default;
+  border-bottom:2px solid rgb(240, 237, 237);
 
+  p{
+    color:black;
+    @include sm {
+      display: none;
+    }
+  }
   a {
     transition: all 0.4s ease;
+    color:rgb(16, 63, 63);
 
     @include sm {
       display: none;
     }
 
     &:hover {
-      scale: 1.05;
+      scale: 1.05;color:rgb(28, 207, 219);
     }
   }
 
@@ -22,10 +34,11 @@ nav {
     flex: 3;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 
     .logo {
-      font-weight: bold;
+      margin-left:10px;
+      font-weight: 800;
       font-size: 20px;
       display: flex;
       align-items: center;
@@ -51,7 +64,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: #091429;
+    background-color:white;
     height: 100%;
 
     @include md {
@@ -60,7 +73,7 @@ nav {
 
     a {
       padding: 12px 24px;
-      margin: 20px;
+      margin: 10px;
     }
 
     .user{
@@ -70,13 +83,14 @@ nav {
 
       img{
         width: 40px;
-        height: 40px;
+        height:40px;
         border-radius: 50%;
         object-fit: cover;
-        margin-right: 20px;
+        margin-right: 10px;
       }
 
       span{
+        text-transform:none;;
         @include sm{
           display: none;
         }
@@ -84,10 +98,11 @@ nav {
 
       .profile{
         padding: 12px 24px;
-        background-color: #fece51;
+        background-color: rgb(28, 207, 219);
         cursor: pointer;
-        border: none;
+        border: transparent;border-radius:5px;
         position: relative;
+        margin-right:40px;
         
         .notification{
           position: absolute;
@@ -102,17 +117,24 @@ nav {
           align-items: center;
           justify-content: center;
         }
+        &:hover {
+          color:rgb(4, 43, 61);border-bottom:4px solid rgb(34, 150, 158);
+        }
 
       }
     }
 
     .register {
-      background-color: #fece51;
+      background-color: rgb(28, 207, 219);border:transparent;border-radius:5px;
+      &:hover{
+        color:rgb(4, 43, 61);border-bottom:4px solid rgb(34, 150, 158);
+      }
     }
 
     .menuIcon {
       display: none;
       z-index: 999;
+      margin-right:30px;
 
       img {
         width: 36px;

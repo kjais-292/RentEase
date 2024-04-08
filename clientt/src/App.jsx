@@ -1,7 +1,6 @@
 import HomePage from "./routes/homePage/homePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ListPage from "./routes/listPage/listPage";
-import AgentPage from "./routes/agentPage/agentPage";
 import ContactPage from "./routes/contactPage/contactPage";
 import { Layout, RequireAuth } from "./routes/layout/layout";
 import SinglePage from "./routes/singlePage/singlePage";
@@ -21,10 +20,6 @@ function App() {
         {
           path: "/",
           element: <HomePage />,
-        },
-        {
-          path:"/agents",
-          element:<AgentPage/>
         },
         {
           path:"/contact",

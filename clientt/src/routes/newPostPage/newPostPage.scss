@@ -1,13 +1,24 @@
+@import "../../responsive.scss";
 .newPostPage {
   height: 100%;
   display: flex;
-
+  
   .formContainer {
     flex: 3;
     overflow: scroll;
+    margin-left:30px;
+    margin-top:10px;
+    
+
+    h1{
+      font-size:40px;
+      color:rgb(26, 103, 109);
+    }
 
     .wrapper {
       margin: 30px 50px 100px 0px;
+      font-weight:500;
+      color:rgb(67, 125, 129);
 
       form {
         display: flex;
@@ -45,13 +56,17 @@
           }
         }
         .sendButton {
-          width: 30%;
+          padding:0px 50px;
           border-radius: 5px;
           border: none;
           background-color: teal;
           color: white;
-          font-weight: bold;
+          font-weight: bold;font-size:20px;
           cursor: pointer;
+          transition:all 0.4s;
+          &:hover{
+            border-bottom:4px solid rgb(8, 72, 77);
+          }
         }
       }
     }
@@ -59,7 +74,7 @@
 
   .sideContainer {
     flex: 2;
-    background-color: #fcf5f3;
+    background-color: rgb(132, 158, 160);
     display: flex;
     flex-direction: column;
     gap: 20px;

@@ -12,7 +12,7 @@
   .details {
     flex: 3;
     overflow-y: scroll;
-    padding-bottom: 50px;
+    padding: 50px;
 
     @include md{
       flex:none;
@@ -31,14 +31,18 @@
         justify-content: space-between;
 
         h1{
-          font-weight: 300;
+          font-weight: 800;color:rgb(12, 71, 75);
         }
 
         button{
-          padding: 12px 24px;
-          background-color: #fece51;
+          padding: 12px 24px;font-weight:500;
+          background-color: rgb(39, 133, 139);
           cursor: pointer;
-          border: none;
+          border: transparent;border-radius:4px;
+          transition:all 0.4s ease;color:white;text-transform:capitalize;
+          &:hover{
+            border-bottom:2px solid rgb(8, 94, 100);
+          }
         }
       }
 
@@ -55,12 +59,16 @@
 
         button{
           width: 100px;
-          background-color: teal;
+          background-color: rgb(16, 118, 126);
           border: none;
           color: white;
           padding: 10px 20px;
           cursor: pointer;
           border-radius: 5px;
+          transition:all 0.4s ease;
+          &:hover{
+            border-bottom:2px solid rgb(8, 94, 100);
+          }
         }
 
         img{

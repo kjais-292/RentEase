@@ -2,7 +2,7 @@
 
 .singlePage {
   display: flex;
-  height: 100%;
+  height: 100%;cursor:default;
 
   @include md {
     flex-direction: column;
@@ -21,17 +21,17 @@
     }
 
     .wrapper {
-      padding-right: 50px;
+      padding-right: 50px;padding-left:50px;padding-top:50px;
 
       @include lg {
-        padding-right: 20px;
+        padding-right: 20px;padding-left:20px;padding-top:20px;
       }
       @include md {
-        padding-right: 0px;
+        padding-right: 20px;
       }
 
       .info {
-        margin-top: 50px;
+        margin-top: 30px;
         .top {
           display: flex;
           justify-content: space-between;
@@ -44,9 +44,9 @@
           .post {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
             h1 {
-              font-weight: 400;
+              font-weight: 500;color:rgb(19, 98, 109);
             }
             .address {
               display: flex;
@@ -61,12 +61,12 @@
               }
             }
             .price {
-              padding: 5px;
-              background-color: rgba(254, 205, 81, 0.438);
-              border-radius: 5px;
+              padding: 5px 10px;
+              background-color: rgb(149, 211, 230);
+              border-radius: 5px;border-bottom:2px solid rgb(24, 89, 94);
               width: max-content;
-              font-size: 20px;
-              font-weight: 300;
+              font-size: 16px;
+              font-weight: 400;
             }
           }
           .user {
@@ -74,14 +74,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 20px;
-            padding: 0px 50px;
+            gap: 10px;
+            padding: 0px 30px;
             border-radius: 10px;
-            background-color: rgba(254, 205, 81, 0.209);
+            background-color: rgba(21, 108, 114, 0.209);
             font-weight: 600;
 
             @include sm {
-              padding: 20px 50px;
+              padding: 15px 40px;
             }
 
             img {
@@ -89,20 +89,28 @@
               height: 50px;
               border-radius: 50%;
               object-fit: cover;
+              transition:all 0.4s ease;
+                &:hover{
+                  scale:1.05;
+                }
             }
           }
         }
         .bottom {
           margin-top: 50px;
-          color: #555;
+          color: #303847;
           line-height: 20px;
+          background-color: rgb(233, 227, 227);
+          padding:20px;
+          border:transparent;border-radius:10px;
+          margin-bottom:20px;
         }
       }
     }
   }
   .features {
     flex: 2;
-    background-color: #fcf5f3;
+    background-color: rgb(3, 52, 61);
     height: 100%;
     overflow-y: scroll;
 
@@ -113,7 +121,7 @@
     }
 
     .wrapper {
-      padding: 0px 20px;
+      padding: 20px 20px;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -129,6 +137,7 @@
 
       .title {
         font-weight: bold;
+        color:rgb(203, 225, 226);
         font-size: 18px;
         margin-bottom: 10px;
       }
@@ -157,7 +166,7 @@
         flex-direction: column;
         gap: 20px;
         padding: 20px 10px;
-        background-color: white;
+        background-color: rgb(253, 252, 252);
         border-radius: 10px;
       }
       .listHorizontal {
@@ -194,16 +203,20 @@
       .buttons {
         display: flex;
         justify-content: space-between;
+        margin-bottom:30px;
 
         button {
-          padding: 20px;
+          padding: 20px;font-weight:400;
           display: flex;
           align-items: center;
           gap: 5px;
-          background-color: white;
-          border: 1px solid #fece51;
-          border-radius: 5px;
+          background-color: rgb(161, 218, 223);
+          border: 1px solid rgb(21, 101, 107);transition:all 0.4s ease;
+          border-radius: 10px;
           cursor: pointer;
+          &:hover{
+            border-bottom:2px solid rgb(7, 62, 66);
+          }
 
           img {
             width: 16px;

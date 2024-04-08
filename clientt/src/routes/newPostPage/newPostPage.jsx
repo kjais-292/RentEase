@@ -91,7 +91,7 @@ function NewPostPage() {
             </div>
             <div className="item">
               <label htmlFor="longitude">Longitude</label>
-              <input id="longitude" name="longitude" type="text" />
+              <input id="longitude" name="longitude" type="text" /> 
             </div>
             <div className="item">
               <label htmlFor="type">Type</label>
@@ -100,6 +100,7 @@ function NewPostPage() {
                   Rent
                 </option>
                 <option value="buy">Buy</option>
+                <option value="sell">Sell</option>
               </select>
             </div>
             <div className="item">
