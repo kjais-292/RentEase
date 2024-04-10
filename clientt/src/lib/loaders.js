@@ -6,8 +6,10 @@ export const singlePageLoader = async ({ request, params }) => {
   return res.data;
 };
 export const listPageLoader = async ({ request, params }) => {
-  const query = request.url.split("?")[1];
+  console.log(request.url);
+  const query = request.url.split("?")[1];console.log(query);
   const postPromise = apiRequest("/posts?" + query);
+  console.log(postPromise);
   return defer({
     postResponse: postPromise,
   });
@@ -15,9 +17,9 @@ export const listPageLoader = async ({ request, params }) => {
 
 export const profilePageLoader = async () => {
   const postPromise = apiRequest("/users/profilePosts");
-  const chatPromise = apiRequest("/chats");
+  // const chatPromise = apiRequest("/chats");
   return defer({
     postResponse: postPromise,
-    chatResponse: chatPromise,
+    // chatResponse: chatPromise,
   });
 };

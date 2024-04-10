@@ -33,7 +33,7 @@
     }
 
     .title {
-      font-size: 20px;
+      font-size: 30px;
       font-weight: 600;
       color: #444;
       transition: all 0.4s ease;
@@ -45,7 +45,7 @@
     }
 
     .address {
-      font-size: 14px;
+      font-size: 18px;font-weight:400;
       display: flex;
       align-items: center;
       gap: 5px;
@@ -55,7 +55,7 @@
     .price {
       font-size: 20px;
       font-weight: 300;
-      padding: 5px;
+      padding: 6px 18px;
       border-radius: 5px;
       background-color: rgb(43, 143, 150);
       width: max-content;
@@ -69,15 +69,16 @@
       .features {
         display: flex;
         gap: 20px;
-        font-size: 14px;
+        font-size: 16px;
 
         .feature {
           display: flex;
           align-items: center;
           gap: 5px;
           background-color: whitesmoke;
-          padding: 5px;
+          padding: 5px 14px;
           border-radius: 5px;
+          font-weight:400;
         }
       }
 
@@ -86,16 +87,17 @@
         gap: 20px;
 
         .icon {
-          border: 1px solid #999;
-          padding: 2px 5px;
+          border: 3px solid #999;
+          padding: 18px 14px;
           border-radius: 5px;
           cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: center;
+          transition:0.4s scale;
 
           &:hover {
-            background-color: rgb(109, 148, 151);
+            background-color: rgb(109, 148, 151);scale:1.05;
           }
         }
       }

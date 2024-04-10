@@ -3,6 +3,7 @@ import "./contactPage.scss";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+
 function ContactPage() {
   const form = useRef();
 
@@ -21,6 +22,7 @@ function ContactPage() {
           console.log('FAILED...', error.text);
         },
       );
+      
   };
 
   return (
